@@ -11,7 +11,7 @@ const sortArr = (arr) => {
           
             if (arr[index2] > arr[index2 + 1]) {
             
-                const temperaryElement = arr[index2];
+                let temperaryElement = arr[index2];
                 arr[index2] = arr[index2 + 1];
                 arr[index2 + 1] = temperaryElement;
 
