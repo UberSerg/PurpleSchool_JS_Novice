@@ -2,9 +2,9 @@ const amountOfFunds = "1000";
 const currencyOfFunds = "RUB";
 const targetCurrency = "USD";
 
-function ConvertCurency (amountOfFunds, currencyOfFunds, targetCurrency) {
+function convertCurency (amountOfFunds, currencyOfFunds, targetCurrency) {
     conversionRates = giveConverionRate(currencyOfFunds,targetCurrency)
-    return conversionRates != null? amountOfFunds * conversionRates : null;
+    return amountOfFunds * conversionRates || null;
 }
 
 function giveConverionRate (currencyOfFunds, targetCurrency) { 

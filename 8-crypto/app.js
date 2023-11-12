@@ -10,7 +10,7 @@ passwordArray = password.split("");
     passwordArray.unshift(passwordArray.pop())
     return passwordArray.join('');    
 }
-const check = (cryptedpassword, uncryptedpassword) => true ? crypto(cryptedpassword,1)===uncryptedpassword : false;
+const check = (cryptedpassword, uncryptedpassword) => crypto(cryptedpassword,1)===uncryptedpassword ? true : false;
 console.log(check("Какшуку", "Кукушка")); //true
 console.log(check("Ракшука", "Ракушка")); //true
 console.log(check("уукушка", "Ракушка")); //false
